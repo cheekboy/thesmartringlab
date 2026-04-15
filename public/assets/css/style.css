@@ -255,6 +255,104 @@ footer {
     color: var(--primary);
 }
 
+/* Product Cards */
+.product-card-single {
+    background: var(--bg-gray);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.product-card-single h4 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.product-card {
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    background: var(--bg);
+}
+
+.product-card.highlight {
+    border: 2px solid var(--primary);
+    background: #eff6ff;
+}
+
+.product-card h4 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+}
+
+.product-card .rating {
+    color: var(--text-light);
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+}
+
+.product-card .price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 1rem 0;
+}
+
+.product-grid-small {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.product-card-compact {
+    border: 1px solid var(--border);
+    padding: 1rem;
+    border-radius: 8px;
+    background: var(--bg-gray);
+}
+
+.product-card-compact h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.cta-button.primary {
+    background: #e67e22;
+}
+
+.cta-button.primary:hover {
+    background: #d35400;
+}
+
+.cta-button-small {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.cta-button-small:hover {
+    background: #1d4ed8;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     nav ul {
@@ -266,6 +364,14 @@ footer {
     }
 
     .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid-small {
         grid-template-columns: 1fr;
     }
 
